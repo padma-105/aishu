@@ -1,0 +1,139 @@
+/* nav-bar start */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+}
+body{
+    font-family: sans-serif;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* navbar styling */
+.navbar{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: 2px solid rgb(223, 251, 219);
+}
+
+/* logo style  */
+.logo img{
+    height: 8rem;
+    border-radius: 100%;
+}
+
+.hamburger-menu{
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu .line{
+   display: block;
+   width:2.5rem;
+   height: 2px;
+   margin-bottom: 10px;
+   background-color: black;
+   cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 94%;
+    top: 6rem;
+    left: 18px;
+    background-color: #eee;
+    font-weight: 600;
+
+}
+.nav-menu a{
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+.nav-menu a:hover{
+    background-color: #ccc;
+}
+
+.hide{
+    display: none;
+}
+
+/* for Desktop view  */
+@media screen and (min-width:600px){
+    .navbar{
+        justify-content: space-around;
+    }
+    .nav-menu{
+        display: block;
+        position: static;
+        width: auto;
+        margin-right:20px;
+        background: none;
+    }
+    .nav-menu a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .nav-menu a:hover{
+        background-color: #ccc;
+        border-radius: 5px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+}
+/* nav-bar end */
+
+/* carousels start */
+.contaner-fluid{
+            margin: 0;
+            width: 95%;
+            height: 40%;
+            margin: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-image: url('r1.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            overflow: hidden;
+            padding: 5rem;
+}
+form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    width: 300px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.button{
+    background-color: #444; 
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* carousels end */
+/* cars-data */
+.cars-data{
+    grid-template-columns:repeat(1fr,1fr,1fr);
+}

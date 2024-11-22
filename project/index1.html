@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rentals</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Available Cars for Rent</h1>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar for filters -->
+    <aside class="filter-section">
+      <h2>Filters</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter car name">
+
+      <label for="fuel">Fuel Type:</label>
+      <select id="fuel">
+        <option value="all">All</option>
+        <option value="petrol">Petrol</option>
+        <option value="diesel">Diesel</option>
+        <option value="electric">Electric</option>
+      </select>
+
+      <label for="transmission">Transmission:</label>
+      <select id="transmission">
+        <option value="all">All</option>
+        <option value="Automatic">Automatic</option>
+        <option value="Manual">Manual</option>
+      </select>
+
+      <label for="seater">Seater Type:</label>
+      <select id="seater">
+        <option value="all">All</option>
+        <option value="5 seater">5 seater</option>
+        <option value="7 seater">7 seater</option>
+      </select>
+
+      <button id="filter-button">Apply Filters</button>
+    </aside>
+
+    <!-- Main content for car data -->
+    <main class="car-display">
+      <div id="car-list" class="car-list"></div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Car Rentals. All rights reserved.</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
