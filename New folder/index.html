@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- nav-bar start -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="./logo.jpg" alt="gfg_logo">
+                </a>
+            </div>
+            <div class="nav-menu hide">
+                <a href="#">Home</a>
+                <a href="#">Car Rental</a>
+                <a href="#">Car Subscription</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!-- nav-bar end -->
+
+    <!-- form start -->
+    <div class="contaner-fluid">
+        <form action="#">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="mail">E-mail</label><br>
+            <input type="text" name="name" id="mail"><br>
+            <label for="location">Location</label><br>
+            <input type="text" name="name" id="location" list="locations"><br>
+            <datalist id="locations">
+                <option value="Hyderbad"></option>
+                <option value="Bangalore"></option>
+                <option value="Mumbai"></option>
+                <option value="Pune"></option>
+            </datalist>
+            <a href="./index1.html" class="button">Submit</a>
+        </form>
+
+    </div>
+    <!-- form end -->
+    <!-- carousels start -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="b1.png" alt="Feature 1" class="feature-icon" />
+                    <h3>Easy Booking</h3>
+                    <p>Book a car easily with just a few clicks.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="b2.jpg" alt="Feature 2" class="feature-icon" />
+                    <h3>Wide Variety</h3>
+                    <p>Choose from a range of cars for all your needs.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="b3.png" alt="Feature 3" class="feature-icon" />
+                    <h3>Affordable Prices</h3>
+                    <p>Get the best deals at competitive rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- carousel end -->
+    <!-- carousels second start -->
+    <div class="carousel-container">
+        <h1 id="h1-heading">Top Selling Cars </h1>
+        <ol class="carousel-track">
+
+            <li class="carousel-item">
+                <div class="car-card">
+                    <div class="car-data">
+                        <div>
+                            <h3 class="car-name">Baleno AT</h3>
+                            <p class="car-brand">Maruti</p>
+                        </div>
+                        <img src="./maruti_baleno.jpg" alt="Baleno AT" class="car-image">
+                    </div>
+                    <div class="car-details">
+                        <span><i class="fa fa-car"></i> Hatchback</span>
+                        <span><i class="fa fa-cogs"></i> Automatic</span>
+                        <span><i class="fa fa-users"></i> 5 seats</span>
+                    </div>
+                    <p class="car-price">₹ 6000 <span>per day</span></p>
+                </div>
+            </li>
+            <li class="carousel-item">
+                <div class="car-card">
+                    <div class="car-data">
+                        <div>
+                            <h3 class="car-name">Swift</h3>
+                            <p class="car-brand">Maruti</p>
+                        </div>
+                        <img src="./Swift_01.png" alt="Baleno AT" class="car-image">
+                    </div>
+                    <div class="car-details">
+                        <span><i class="fa fa-car"></i> Hatchback</span>
+                        <span><i class="fa fa-cogs"></i> Automatic</span>
+                        <span><i class="fa fa-users"></i> 5 seats</span>
+                    </div>
+                    <p class="car-price">₹ 3744 <span>per day</span></p>
+                </div>
+            </li>
+            <li class="carousel-item">
+                <div class="car-card">
+                    <div class="car-data">
+                        <div>
+                            <h3 class="car-name">Alto K10</h3>
+                            <p class="car-brand">Maruti</p>
+                        </div>
+                        <img src="./maruti_altok10.jpg" alt="Baleno AT" class="car-image">
+                    </div>
+                    <div class="car-details">
+                        <span><i class="fa fa-car"></i> Hatchback</span>
+                        <span><i class="fa fa-cogs"></i> Automatic</span>
+                        <span><i class="fa fa-users"></i> 5 seats</span>
+                    </div>
+                    <p class="car-price">₹ 3792 <span>per day</span></p>
+                </div>
+            </li>
+
+
+        </ol>
+    </div>
+    <!-- carousels second end -->
+    <!-- feedback section -->
+    <div class="feedback">
+        <div class="back">
+            <span><i class="bi bi-emoji-smile-fill"></i></span>
+            <h2><b>1 Mn +</b></h2>
+            <p>Happy Coustmers</p>
+        </div>
+
+        <div class="back">
+            <span><i class="bi bi-geo-alt-fill"></i></span>
+            <h2><b>22+ Cities</b></h2>
+            <p>Across India</p>
+        </div>
+
+        <div class="back">
+            <span><i class="bi bi-car-front-fill"></i></span>
+            <h2><b>50 Mn+</b></h2>
+            <p>Kms Travelled</p>
+        </div>
+
+        <div class="back">
+            <span><i class="bi bi-star-fill"></i></span>
+            <h2><b>4.8/5</b></h2>
+            <p>20K+ Reviewers</p>
+        </div>
+    </div>
+    </div>
+    <!-- feedback end -->
+    <!-- serviceble cities start -->
+    <div id="city">
+        <h2 class="footerHeading">Servisable Cities</h2>
+        <div class="footerSection">
+            <div class="footerInfo">
+                <a href="index.html" class="anchor">Car Rental in Hyderbad</a><br>
+                <a href="index.html" class="anchor">Car Rental in Delhi</a><br>
+                <a href="index.html" class="anchor">Car Rental in Mumbai</a><br>
+                <a href="index.html" class="anchor">Car Rental in Bangalore</a><br>
+                <a href="index.html" class="anchor">Car Rental in Pune </a><br>
+                <a href="index.html" class="anchor">Car Rental in Goa</a>
+            </div>
+            <div class="footerInfo">
+                <a href="index.html" class="anchor">Car Rental in Kolkata</a><br>
+                <a href="index.html" class="anchor">Car Rental in Jaipur</a><br>
+                <a href="index.html" class="anchor">Car Rental in Kochi</a><br>
+                <a href="index.html" class="anchor">Car Rental in Ahmadabad</a><br>
+                <a href="index.html" class="anchor">Car Rental in Magalore</a><br>
+                <a href="index.html" class="anchor">Car Rental in Mysur</a>
+            </div>
+            <div class="footerInfo">
+                <a href="index.html" class="anchor">Car Rental in Vijayawada</a><br>
+                <a href="index.html" class="anchor">Car Rental in Tirupati</a><br>
+                <a href="index.html" class="anchor">Car Rental in Vadodara</a><br>
+                <a href="index.html" class="anchor">Car Rental in Surath</a><br>
+                <a href="index.html" class="anchor">Car Rental in Trivandrum</a><br>
+                <a href="index.html" class="anchor">Car Rental in Nagpur</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- serviceble cities end -->
+    <!-- information start-->
+    <div class="matter">
+        <h2>Popular car types in Coimbatore</h2>
+        <div class="one">
+            <div>
+                <h3>By seating type</h3>
+                <ul>
+                    <li>5 seater self drive car rental in Coimbatore</li>
+                    <li>7 seater self drive car rental in Coimbatore</li>
+                </ul>
+            </div>
+            <div>
+                <h3>By body type</h3>
+                <ul>
+                    <li>Hatchback self drive car rental in Coimbatore</li>
+                    <li>SUV self drive car rental in Coimbatore</li>
+                    <li>Sedan self drive car rental in Coimbatore</li>
+                </ul>
+            </div>
+            <div>
+                <h3>By make</h3>
+                <ul>
+                    <li>Maruti cars for self drive rental in Coimbatore</li>
+                    <li>Hyundai cars for self drive rental in Coimbatore</li>
+                    <li>Mahindra cars for self drive rental in Coimbatore</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- information end -->
+    <!-- format start -->
+
+    <!-- format end -->
+    <!-- footer section -->
+    <footer>
+
+        <div class="footerExtras ">
+            <span> <i class="fa-solid fa-suitcase "></i>Customer</span>
+            <span> <i class="fa-solid fa-star"></i> Advertise</span>
+            <span> <i class="fa-solid fa-gift"></i> Gift Cards</span>
+            <span> <i class="fa-solid fa-circle-question"></i> Help Center</span>
+            <span>© 2007-2024 Car rental.com</span>
+            <span><img src="./payment-method.svg" alt="payment-method"></span>
+
+        </div>
+
+    </footer>
+    <!-- footer section end -->
+    <!-- carousels start -->
+
+    <!-- carosels end -->
+
+
+    <script src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
