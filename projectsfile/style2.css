@@ -1,0 +1,68 @@
+body {
+  box-sizing: border-box;
+  background-color: #ccc;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.car-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.car-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.car-details h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.car-details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#booking-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#booking-section input[type="date"] {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#booking-section p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#book-now{
+  background-color: #28a745 ;
+  color: white ;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1rem;
+}
+
+#book-now:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#book-now:hover:enabled {
+  background-color: #218838;
+}
